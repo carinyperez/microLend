@@ -3,8 +3,8 @@ import ReactPlayer from 'react-player'
 import '@progress/kendo-theme-default/dist/all.css'; 
 import './App.css';
 import {Calendar} from '@progress/kendo-react-dateinputs'; 
-import HomePage from '../src/pages/homepage/homepage';
-import Navigation from '../src/pages/navigation/navigation'; 
+import HomePage from './pages/homepage/homepage';
+import Navigation from './pages/navigation/navigation'; 
 
 
 function App() {
