@@ -9,6 +9,11 @@
     .menu {
         color: var(--blue);
         font-size: 1.5rem;
+        a {
+            margin: 0px 10px;
+            color: gray;
+            text-decoration: none;
+        }
     }
 }
 

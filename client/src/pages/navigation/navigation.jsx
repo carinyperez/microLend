@@ -12,7 +12,13 @@ class Navigation extends React.Component {
                     <img src={logo} alt='logo'>
                     </img>
                 </Link>
-                <Menu className='menu'> 
+                <div className='menu'>
+                <Link to='/lend'>Lend</Link>
+                <Link to='/borrow'>Borrow</Link>
+                <Link to='/mentors'>Mentors</Link>
+                <Link to='/about'>About</Link>
+                </div>
+                {/* <Menu className='menu'> 
                     <MenuItem 
                         text='Lend'
                         url='/lend'
@@ -20,7 +26,7 @@ class Navigation extends React.Component {
                     <MenuItem text='Borrow' url='/borrow'/>
                     <MenuItem text='Mentors' url='/mentors'/>
                     <MenuItem text='About us' url='/about'/>
-                </Menu>
+                </Menu> */}
             </div>
 
         )
