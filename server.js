@@ -5,12 +5,6 @@ const pool = require('./pool');
 // import routes 
 const users = require('./routes/api/users'); 
 
-const proConfig =  {
-    connectionString: process.env.DATABASE_URL, // heroku addons
-    ssl: {    /* <----- Add SSL option */
-        rejectUnauthorized: false,
-    }
-}
 
 const PORT = process.env.PORT || 5000; 
 const app = express(); 
