@@ -16,7 +16,7 @@ class Navigation extends React.Component {
                 <Link to='/lend'>Lend</Link>
                 <Link to='/borrow'>Borrow</Link>
                 <Link to='/mentors'>Mentors</Link>
-                {/* <Link to='/about'>About</Link> */}
+                <Link to='/about'>About</Link>
                 </div>
                 {/* <Menu className='menu'> 
                     <MenuItem 
