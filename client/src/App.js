@@ -16,6 +16,8 @@ function App() {
       <Navigation/> 
       <Switch>
           <Route exact path ='/' component={HomePage}></Route>
+          <Route exact path ='/lend' component={Navigation}></Route>
+          <Route exact path ='/borrow' component={Navigation}></Route>
       </Switch>
       <button onClick={loadUser}>Load user</button>
     </div>
