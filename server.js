@@ -8,3 +8,6 @@ app.get('/api', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`)
 })
+app.get("/", (request, response) => {
+  response.sendFile("client/public/index.html", { root: __dirname });
+});
