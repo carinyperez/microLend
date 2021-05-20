@@ -2,17 +2,24 @@ import React, {Component} from 'react';
 import { Menu, MenuItem } from "@progress/kendo-react-layout";
 import './navigation.styles.scss'; 
 import logo from '../../assets/logo.png';
+import {Link} from 'react-router-dom'; 
 
 class Navigation extends React.Component {
     render() {
         return (
             <div className='nav'> 
-                <img src={logo} alt='logo'></img>
+                <Link to='/'>
+                    <img src={logo} alt='logo'>
+                    </img>
+                </Link>
                 <Menu className='menu'> 
-                    <MenuItem text='Lend'/>
-                    <MenuItem text='Borrow'/>
-                    <MenuItem text='Mentors'/>
-                    <MenuItem text='About us'/>
+                    <MenuItem 
+                        text='Lend'
+                        url='/lend'
+                    />
+                    <MenuItem text='Borrow' url='/borrow'/>
+                    <MenuItem text='Mentors' url='/mentors'/>
+                    <MenuItem text='About us' url='/about'/>
                 </Menu>
             </div>
 

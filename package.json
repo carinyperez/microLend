@@ -4,9 +4,9 @@
   "description": "A web application that connects disadvantaged borrowers to crowdfunded microloans",
   "main": "index.js",
   "engines": {
-    "node": "16.0.0", 
+    "node": "16.0.0",
     "npm": "7.10.0"
-  }, 
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -30,6 +30,7 @@
     "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "nodemon": "^2.0.7",
-    "pg": "^8.6.0"
+    "pg": "^8.6.0",
+    "react-router-dom": "^5.2.0"
   }
 }
