@@ -15,11 +15,6 @@ app.use(express.json({extended: false}))
 // define routes 
 app.use('/api', users); 
 
-app.get('/', (req, res) => {
-    res.send('hello from the server')
-})
-
-
 // Serve static assets in production 
 if(process.env.NODE_ENV === 'production') {
     // Set static folder 
