@@ -1,15 +1,25 @@
 const express = require('express');
-const pg = require('pg'); 
+const Pool = require('pg').Pool; 
 const path = require('path'); 
+require('dotenv').config(); 
 
 // connect to postgres database 
-const pool = new pg.Pool({
-    host: 'localhost', 
-    port: 5432,
-    database: 'microLend',
-    user:'carinyperez',
-    password: ''
-})
+const devConfig = {
+    host: process.env.PG_HOST, 
+    port: process.env.PG_PORT,
+    database: process.env.PG_DATABASE,
+    user: process.env.PG_USER,
+    password: process.env.PASSWORD
+}
+console.log(process.env.PG_HOST);
+
+const proConfig =  {
+    connectionString: process.env.DATABASE_URL
+}
+
+const pool = new Pool(
+    process.env.NODE_ENV === 'production' ? proConfig : devConfig
+);
 
 // check connection 
 pool.query('SELECT 1 + 1')
