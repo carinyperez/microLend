@@ -4,4 +4,7 @@ const loadUser = () => {
 }
 console.log(loadUser); 
 
+let arr = [1]; 
+console.log(arr.length); 
+
 
