@@ -14,7 +14,7 @@ const devConfig = {
 console.log(process.env.PG_HOST);
 
 const proConfig =  {
-    connectionString: process.env.DATABASE_URL
+    connectionString: process.env.DATABASE_URL // heroku addons
 }
 
 const pool = new Pool(

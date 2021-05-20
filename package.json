@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A web application that connects disadvantaged borrowers to crowdfunded microloans",
   "main": "index.js",
+  "engines": {
+    "node": "16.0.0", 
+    "npm": "7.10.0"
+  }, 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
