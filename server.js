@@ -1,17 +1,9 @@
 const express = require('express');
-const Pool = require('pg').Pool; 
-const path = require('path'); 
-require('dotenv').config(); 
+const path = require('path');
+const pool = require('./pool');
 
-// connect to postgres database 
-const devConfig = {
-    host: process.env.PG_HOST, 
-    port: process.env.PG_PORT,
-    database: process.env.PG_DATABASE,
-    user: process.env.PG_USER,
-    password: process.env.PASSWORD
-}
-console.log(process.env.PG_HOST);
+// import routes 
+const users = require('./routes/api/users'); 
 
 const proConfig =  {
     connectionString: process.env.DATABASE_URL, // heroku addons
@@ -20,30 +12,19 @@ const proConfig =  {
     }
 }
 
-const pool = new Pool(
-    process.env.NODE_ENV === 'production' ? proConfig : devConfig
-);
-
-// check connection 
-pool.query('SELECT 1 + 1')
-    .then((res)=> {
-        console.log(res)
-    })
-
 const PORT = process.env.PORT || 5000; 
 const app = express(); 
 
-// app.use(express.urlencoded)({
-//     extended: true
-// })
+// parses json requests 
+app.use(express.json({extended: false}))
 
-// route handlers 
-app.get('/users', async(req, res) => {
-    const {rows} = await pool.query(`
-        SELECT * FROM users; 
-    `)
-    res.send(rows); 
+// define routes 
+app.use('/api', users); 
+
+app.get('/', (req, res) => {
+    res.send('hello from the server')
 })
+
 
 // Serve static assets in production 
 if(process.env.NODE_ENV === 'production') {

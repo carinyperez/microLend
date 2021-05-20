@@ -8,7 +8,7 @@ import {Switch, Route} from 'react-router-dom';
 
 function App() {
   const loadUser = async() => {
-    const res = await axios.get('/users'); 
+    const res = await axios.get('api/users'); 
     res.data.map(el => console.log(el)); 
   }
   return (
