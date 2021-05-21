@@ -1,8 +1,8 @@
 .nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2rem;
-
+    padding:1rem;
+    margin-bottom: 5rem; 
     background-color: var(--blue);
     height: 30vh;
     .imageLink {
