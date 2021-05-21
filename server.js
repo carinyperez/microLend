@@ -9,6 +9,7 @@ const users = require('./routes/api/users');
 const PORT = process.env.PORT || 5000; 
 const app = express(); 
 
+//middleware
 app.use('*', cors()); 
 // parses json requests 
 app.use(express.json({extended: false}))
@@ -24,6 +25,6 @@ if(process.env.NODE_ENV === 'production') {
         res.sendFile(path.resolve(__dirname),'client', 'build', 'index.html')
     })
 }
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log(`Server listening on ${PORT}`)
 })

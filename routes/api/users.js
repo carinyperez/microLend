@@ -2,7 +2,8 @@ const express = require('express');
 const router = express.Router(); 
 const pool = require('../../pool'); 
 const {check, validationResult} = require('express-validator'); 
-const bcrypt = require('bcryptjs'); 
+const bcrypt = require('bcryptjs');
+
 
 // @route GET api/users
 // @desc get users 
