@@ -14,7 +14,7 @@ const signup = ({username, email, password}) => async dispatch =>{
     const body = JSON.stringify({username, email, password});
     console.log(body);
     try {
-        const res = await axios.post('http://localhost:5000/api/users', body, config); 
+        const res = await axios.post('/api/users', body, config); 
         console.log(res.data); 
         dispatch({
             type: AuthActionTypes.SIGNUP_SUCCESS, 
