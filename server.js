@@ -1,14 +1,15 @@
 const express = require('express');
 const path = require('path');
 const pool = require('./pool');
+const cors = require('cors'); 
 
 // import routes 
 const users = require('./routes/api/users'); 
 
-
 const PORT = process.env.PORT || 5000; 
 const app = express(); 
 
+app.use('*', cors()); 
 // parses json requests 
 app.use(express.json({extended: false}))
 

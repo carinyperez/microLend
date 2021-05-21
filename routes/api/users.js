@@ -48,7 +48,7 @@ router.post('/users',
         INSERT INTO users(username, email, password)
         VALUES($1,$2, $3) RETURNING *
         `,[username,email,password])  
-        res.send(user.rows[0]);  
+        res.send(user.rows[0]); 
     } catch (error) {
         console.error(error)   
     } 
