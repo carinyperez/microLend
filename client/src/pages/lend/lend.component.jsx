@@ -14,7 +14,7 @@ const Lend = () => {
           button="View loan"
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
-          percentage="40"
+          percentage="50"
         />
         <Cards
           title="An-Nisa UI Islam"
@@ -22,7 +22,7 @@ const Lend = () => {
           button="View loan"
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
-          percentage="40"
+          percentage="50"
         />
         <Cards
           title="An-Nisa UI Islam"
@@ -30,7 +30,7 @@ const Lend = () => {
           button="View loan"
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
-          percentage="40"
+          percentage="50"
         />
       </div>
       <div className="subNav">
@@ -47,7 +47,7 @@ const Lend = () => {
           button="View loan"
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
-          percentage="40"
+          percentage="50"
         />
         <Cards
           title="An-Nisa UI Islam"
@@ -55,7 +55,7 @@ const Lend = () => {
           button="View loan"
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
-          percentage="40"
+          percentage="50"
         />
         <Cards
           title="An-Nisa UI Islam"
@@ -63,7 +63,7 @@ const Lend = () => {
           button="View loan"
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
-          percentage="40"
+          percentage="50"
         />
         <Cards
           title="An-Nisa UI Islam"
@@ -71,7 +71,7 @@ const Lend = () => {
           button="View loan"
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
-          percentage="40"
+          percentage="50"
         />
         <Cards
           title="An-Nisa UI Islam"
@@ -79,7 +79,7 @@ const Lend = () => {
           button="View loan"
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
-          percentage="40"
+          percentage="50"
         />
         <Cards
           title="An-Nisa UI Islam"
@@ -87,7 +87,7 @@ const Lend = () => {
           button="View loan"
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
-          percentage="40"
+          percentage="50"
         />
       </div>
     </div>
