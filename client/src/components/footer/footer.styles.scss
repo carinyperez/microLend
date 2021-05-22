@@ -1,0 +1,39 @@
+.footer {
+    background-color: var(--blue);
+    display: flex; 
+    color: white;
+    justify-content: space-around;
+    padding: 2rem;
+    .footer-loan, .footer-borrow, .footer-mentor {
+        flex-shrink: 1;
+        flex-grow: 1; 
+        flex-basis: auto;
+        margin-right: 2rem;
+        text-align:left;
+    }
+    img {
+        height: 10vh;
+        align-self: center;
+        margin-right: 2rem;
+    }
+    .icons {
+        display: flex; 
+        flex-direction: column;
+        padding-top: 1rem;
+        align-self: center; 
+        p {
+            display: inline-block;
+            svg {
+                padding-right: 0.5rem;
+            }
+        }
+        .social-media { 
+            p {
+                display: inline-block; 
+            }
+            // svg {
+            //     padding-right: 2rem;
+            // }  
+        }
+    }
+}
