@@ -30,9 +30,5 @@
     "express-validator": "^6.11.1",
     "nodemon": "^2.0.7",
     "pg": "^8.6.0"
-  },
-  "engines": {
-    "node": "16.0.0", 
-    "npm": "7.10.0"
   }
 }

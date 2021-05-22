@@ -2,13 +2,15 @@
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-gap: 1rem;
-    padding: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .k-card {
     display: flex;
     justify-items: center;
-    align-items: center; 
+    align-items: center;
+
     .k-card-image {
         margin-bottom: 1rem;
         height: 20vh;
