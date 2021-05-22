@@ -1,0 +1,45 @@
+.causes {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.k-card {
+    display: flex;
+    justify-items: center;
+    align-items: center; 
+    .k-card-image {
+        margin-bottom: 1rem;
+        height: 20vh;
+        width: auto;
+    }
+    .k-card-title {
+        color: #0047FF;
+        font-weight: lighter;
+        text-align: center;
+        p {
+            margin-left: 3rem;
+            color: black;
+            font-weight: bolder;
+            display: inline-block;
+        }
+    }
+    .k-card-actions {
+        button {
+            border-radius: 10px;
+            border-color: var(--red);
+            border-width: thin;
+            border-style: solid;
+            outline: none;
+            padding: 0.25rem;
+            color: var(--red); 
+            background-color: white;
+            
+        }
+    }
+    .k-card-body {
+        padding: 0;
+    }
+}
+

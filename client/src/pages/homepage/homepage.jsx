@@ -3,6 +3,12 @@ import loan from "../../assets/loan.png";
 import borrow from "../../assets/borrow.png";
 import mentors from "../../assets/mentors.png";
 import "./homepage.styles.scss";
+import Cards from '../../components/cards/cards.component';
+import card1 from '../../assets/card1.jpeg'; 
+import card2 from '../../assets/card2.jpeg'; 
+import card3 from '../../assets/card3.jpeg'; 
+import card4 from '../../assets/card4.jpeg'; 
+
 
 const HomePage = () => {
   return (
@@ -53,8 +59,16 @@ const HomePage = () => {
           <p>Our mentors can help with things like business strategy,market research, business planning</p>
         </div>
       </div>
+      <h1>Support causes you care about</h1>
       <div className="causes">
-        <h1>Support casues you care about</h1>
+        <Cards title='An-Nisa UI Islam' image={card1} button='View loan' amount='$100'
+        desc='This loan will help buy computers for an after-school program'/>
+        <Cards title='Rengvo' image={card2} button='View loan' amount='$200'
+        desc='This loan will help buy seeds for next harvesting season'/>
+        <Cards title='Mandingu' image={card3} button='View loan' amount='$25'
+        desc='This loan will help plant fruit trees and the fruit will be sold'/>
+        <Cards title='Del Sol Group' image={card4} button='View loan' amount='$2500'
+        desc='This loan will help buy the materials to build a school'/>
       </div>
     </div>
   );
