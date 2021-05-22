@@ -8,6 +8,9 @@ import {Switch, Route, BrowserRouter} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import store from './redux/store';
 import Footer from './components/footer/footer.component';
+import Login from './components/login/login.component';
+import Mentors from './pages/mentors/mentors.component';
+
 
 const  App = () => {
   return (
@@ -18,6 +21,8 @@ const  App = () => {
         <Switch>
             <Route exact path ='/' component={HomePage}></Route>
             <Route exact path ='/borrow' component={Borrow}></Route>
+            <Route exact path ='/login' component={Login}></Route>
+            <Route exact path ='/mentors' component={Mentors}></Route>
         </Switch>
         <Footer/>
       </div>

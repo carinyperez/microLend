@@ -15,12 +15,13 @@ const signup = ({username, email, password}) => async dispatch =>{
     console.log(body);
     try {
         const res = await axios.post('/api/users', body, config); 
-        console.log(res.data); 
         dispatch({
             type: AuthActionTypes.SIGNUP_SUCCESS, 
             payload: res.data 
         })
         dispatch(setAlert('Login successful'))
+        console.log(res); 
+        return res.data
     } catch (error) {
         console.error(error); 
         const errors = error.response.data.errors; 

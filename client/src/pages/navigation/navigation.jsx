@@ -27,7 +27,7 @@ function Navigation(props){
                         route: "/mentors"
                     }} />
                     <MenuItem text="Login" data={{
-                        route: "/about"
+                        route: "/login"
                     }} />
                 </Menu>
             </div>

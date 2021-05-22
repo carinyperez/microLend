@@ -14,7 +14,8 @@ const Cards = (props) => {
                     <p>{props.amount}</p>
                     </CardTitle>
                     <CardBody>
-                        {props.desc}
+                        <p>{props.desc}</p>
+                        {props.category}
                     </CardBody>
                     <CardActions>
                         <button>{props.button}</button>
