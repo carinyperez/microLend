@@ -1,0 +1,44 @@
+.login-container {
+    text-align: center;
+    background-color: white;
+    width: 70vw;
+    margin: auto;
+    .login{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-top: -200px;
+        margin-bottom: 10rem;
+        h1{
+            color: #0047FF;
+        }
+        form {
+            display: flex;
+            flex-direction: column; 
+            width: 70vw;
+            margin: 0px 20px;
+            input,button, label{
+                width: 30vw;
+                color: white; 
+                padding: 10px 0px;
+                margin: auto;
+            }
+            button {
+                width: 20vw;
+                background-color: var(--red);
+                margin-top: 20px;
+                border-radius: 20px;
+                border: none;
+            }
+            label {
+                color: black;
+                text-align: left;
+            }
+            input {
+                color: black; 
+            }
+        }
+    }
+}
+
