@@ -23,17 +23,21 @@
         align-self: center; 
         p {
             display: inline-block;
+            .marker {
+                padding-left: 1rem;
+            }
             svg {
                 padding-right: 0.5rem;
             }
         }
         .social-media { 
             p {
-                display: inline-block; 
+                display: inline-block;
+                svg {
+                padding-right: 1.5rem;
+                }  
             }
-            // svg {
-            //     padding-right: 2rem;
-            // }  
+             
         }
     }
 }

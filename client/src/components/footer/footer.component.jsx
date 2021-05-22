@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
             <div className='icons'>
                 <p>
-                <FaMapMarkerAlt/>
+                <FaMapMarkerAlt className='marker'/>
                 <span>
                 San Francisco, CA 
                 </span>
