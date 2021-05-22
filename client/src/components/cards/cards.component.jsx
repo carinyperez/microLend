@@ -1,9 +1,17 @@
-import React from 'react'; 
-import ReactDOM from 'react-dom'; 
-import 
-{Card, CardHeader, CardTitle, CardBody, CardActions, CardImage, CardSubtitle,Avata } 
-from '@progress/kendo-react-layout';
-import './cards.styles.scss'; 
+import React from "react";
+import ReactDOM from "react-dom";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardBody,
+  CardActions,
+  CardImage,
+  CardSubtitle,
+  Avata,
+} from "@progress/kendo-react-layout";
+import { ProgressBar } from "@progress/kendo-react-progressbars";
+import "./cards.styles.scss";
 
 const Cards = (props) => {
         return (
@@ -17,12 +25,12 @@ const Cards = (props) => {
                         <p>{props.desc}</p>
                         {props.category}
                     </CardBody>
+                    <ProgressBar value={props.percentage} />
                     <CardActions>
                         <button>{props.button}</button>
                     </CardActions>
                 </Card>   
             </div>
-
         )
 }
     

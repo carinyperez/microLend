@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/carinyperez/microLend#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "bcryptjs": "^2.4.3",
     "concurrently": "^6.1.0",
     "cors": "^2.8.5",
