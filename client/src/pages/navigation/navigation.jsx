@@ -30,12 +30,6 @@ function Navigation(props){
                         route: "/about"
                     }} />
                 </Menu>
-               {/* <div className='menu'>
-                    <Link to='/lend'>Loan</Link>
-                    <Link to='/borrow'>Borrow</Link>
-                    <Link to='/mentors'>Mentorship</Link>
-                    <Link to='/about'>Login</Link>
-                </div>*/}
             </div>
         )
     }

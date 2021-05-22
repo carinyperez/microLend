@@ -5,7 +5,7 @@ import signup from '../../redux/reducers/auth/auth.actions';
 import Alert from '../alert/alert.component'; 
 import setAlert from '../../redux/reducers/alert/alert.actions';
 import {withRouter} from 'react-router-dom'; 
-
+import axios from 'axios'; 
 
 class SignUp extends React.Component {
     constructor() {
@@ -19,7 +19,6 @@ class SignUp extends React.Component {
     handleSubmit = async event => {
         event.preventDefault(); 
         const {username, email, password} = this.state;
-        // redux actions 
         this.props.signup({username, email, password});
         setTimeout(() => this.props.history.push('/loan-application'), 3000); 
     }
