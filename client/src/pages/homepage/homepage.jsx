@@ -78,7 +78,7 @@ const HomePage = () => {
           button="View loan"
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
-          percentage="40%"
+          percentage="40"
         />
         <Cards
           title="Rengvo"
@@ -86,7 +86,7 @@ const HomePage = () => {
           button="View loan"
           amount="$200"
           desc="This loan will help buy seeds for next harvesting season"
-          percentage="60%"
+          percentage="60"
         />
         <Cards
           title="Mandingu"
@@ -94,7 +94,7 @@ const HomePage = () => {
           button="View loan"
           amount="$25"
           desc="This loan will help plant fruit trees and the fruit will be sold"
-          percentage="50%"
+          percentage="50"
         />
         <Cards
           title="Del Sol Group"
@@ -102,7 +102,7 @@ const HomePage = () => {
           button="View loan"
           amount="$2500"
           desc="This loan will help buy the materials to build a school"
-          percentage="70%"
+          percentage="70"
         />
       </div>
     </div>
