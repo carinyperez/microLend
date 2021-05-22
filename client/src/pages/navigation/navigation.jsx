@@ -16,7 +16,7 @@ function Navigation(props){
                     <img src={logo} alt='logo'>
                     </img>
                 </Link>
-                <Menu onSelect={onSelect} class='menu'>
+                <Menu onSelect={onSelect} className='menu'>
                     <MenuItem text="Loan" data={{
                         route: "/lend"
                     }} />
