@@ -9,12 +9,15 @@
     .imageLink {
         justify-self: flex-start;
         img{ 
-            padding: 1rem;
+            padding: 3rem;
         }
     }
     .menu {
         justify-self: right;
         padding-right: 3rem;
+        span {
+            font-size: 1.5em;
+        }
     }
 }
 
