@@ -8,7 +8,7 @@ import {
   CardActions,
   CardImage,
   CardSubtitle,
-  Avata,
+  Avatar,
 } from "@progress/kendo-react-layout";
 import { ProgressBar } from "@progress/kendo-react-progressbars";
 import "./cards.styles.scss";
