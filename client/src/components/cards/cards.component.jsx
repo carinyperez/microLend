@@ -26,8 +26,7 @@ const Cards = (props) => {
         <div style={{ "text-align": "left" }}>
           <p>AMOUNT LOANED</p>
         </div>
-        <span>$50/$100</span>
-
+        <span>{props.current} / {props.amount}</span>
         <ProgressBar value={props.percentage} />
         <CardActions>
           <button className="k-button k-bare">Share</button>

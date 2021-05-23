@@ -6,7 +6,7 @@ import card1 from "../../assets/card1.jpeg";
 const Lend = () => {
   return (
     <div>
-      <div className="treading">Treading Now</div>
+      <div className="treading">Trending Now</div>
       <div className="grid-treading">
         <Cards
           title="An-Nisa UI Islam"
@@ -48,6 +48,7 @@ const Lend = () => {
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
           percentage="50"
+          current='$50'
         />
         <Cards
           title="An-Nisa UI Islam"
@@ -56,6 +57,7 @@ const Lend = () => {
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
           percentage="50"
+          current='$50'
         />
         <Cards
           title="An-Nisa UI Islam"
@@ -64,6 +66,7 @@ const Lend = () => {
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
           percentage="50"
+          current='$50'
         />
         <Cards
           title="An-Nisa UI Islam"
@@ -72,6 +75,7 @@ const Lend = () => {
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
           percentage="50"
+          current='$50'
         />
         <Cards
           title="An-Nisa UI Islam"
@@ -80,6 +84,7 @@ const Lend = () => {
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
           percentage="50"
+          current='$50'
         />
         <Cards
           title="An-Nisa UI Islam"
@@ -88,6 +93,7 @@ const Lend = () => {
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
           percentage="50"
+          current='$50'
         />
       </div>
     </div>
