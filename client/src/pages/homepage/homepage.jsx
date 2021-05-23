@@ -9,7 +9,6 @@ import card2 from "../../assets/card2.jpeg";
 import card3 from "../../assets/card3.jpeg";
 import card4 from "../../assets/card4.jpeg";
 
-
 const HomePage = () => {
   return (
     <div className="homepage">
@@ -20,7 +19,7 @@ const HomePage = () => {
           With microLend, you can lend as little as $25
           <br/>
           and make a big change in someone's life
-          <br/>
+          <br/><br/>
           <button id="btn">Find a borrower</button> <button id="btn2">Loan money</button>
         </p>
       </div>
@@ -55,7 +54,7 @@ const HomePage = () => {
           <h2>Repay</h2>
           <p>Repay your loan to be eligible for more loans</p>
         </div>
-        <div className="mentor-home">
+        <div className="mentors">
           <p>
             <img src={mentors} alt="mentors"></img>
           </p>
@@ -81,8 +80,7 @@ const HomePage = () => {
           button="View loan"
           amount="$100"
           desc="This loan will help buy computers for an after-school program"
-          percentage="40"
-          current='$40'
+          percentage="40%"
         />
         <Cards
           title="Rengvo"
@@ -90,8 +88,7 @@ const HomePage = () => {
           button="View loan"
           amount="$200"
           desc="This loan will help buy seeds for next harvesting season"
-          percentage="60"
-          current='$120'
+          percentage="60%"
         />
         <Cards
           title="Mandingu"
@@ -99,8 +96,7 @@ const HomePage = () => {
           button="View loan"
           amount="$25"
           desc="This loan will help plant fruit trees and the fruit will be sold"
-          percentage="50"
-          current='$13'
+          percentage="50%"
         />
         <Cards
           title="Del Sol Group"
@@ -108,8 +104,7 @@ const HomePage = () => {
           button="View loan"
           amount="$2500"
           desc="This loan will help buy the materials to build a school"
-          percentage="70"
-          current='$1750'
+          percentage="70%"
         />
       </div>
     </div>

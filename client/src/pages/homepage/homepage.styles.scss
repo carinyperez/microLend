@@ -80,6 +80,8 @@
 }
 #btn{
     background-color: var(--red); 
+           width: 10%;
+           margin-left:10% ;
            border-radius: 70px;
            outline: none;
            color: white;
@@ -89,7 +91,8 @@
 }
 #btn2{
     background-color:transparent; 
-           margin-left: 1%;
+           width: 10%;
+           margin-right: 10%;
            border-radius: 70px;
            border-color: var(--red);
            outline: none;
