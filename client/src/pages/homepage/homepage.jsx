@@ -53,7 +53,7 @@ const HomePage = () => {
           <h2>Repay</h2>
           <p>Repay your loan to be eligible for more loans</p>
         </div>
-        <div className="mentors">
+        <div className="mentor-home">
           <p>
             <img src={mentors} alt="mentors"></img>
           </p>
