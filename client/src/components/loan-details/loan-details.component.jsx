@@ -4,7 +4,6 @@ import card1 from '../../assets/card1.jpeg';
 import './loan-details.styles.scss';
 import Avatar from 'react-avatar';
 
-
 const LoanDetails = () => {
     return (
         <div>
@@ -39,7 +38,8 @@ const LoanDetails = () => {
                 <p>Facilitated by: <span className='blue'>Economic Development Fund</span></p>
                 <p>Risk Rating: <span className='blue'>Low</span></p>
             </div>
-            <div className='loaners'>
+        </div>
+        <div className='loaners'>
                 <h1>Loaners</h1>
                 <p>People who have donated for this cause</p>
                 <Avatar name="Jeremy Y" round size='50px'/>
@@ -48,8 +48,6 @@ const LoanDetails = () => {
                 <Avatar name="Bolaji O" round size='50px'/>
                 <Avatar name="Jenna T" round size='50px'/>
             </div>
-        </div>
-
         </div>
         
     )

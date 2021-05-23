@@ -8,8 +8,6 @@
     color: gray;
     text-align: left;
     > * {
-        border: 0.5px solid black;
-        border-radius: 1rem;
         padding: 1rem;
         flex: 1;
     }
@@ -37,14 +35,15 @@
         bordeR: none;
 
     }
-    .loaners {
-        display: flex; 
-        flex-wrap: wrap;
-        margin-bottom: 3rem;
-        .sb-avatar {
-            padding: 0.5rem;
+}
+.loaners {
+    width: 100%;
+    // display: flex; 
+    // flex-wrap: wrap;
+    margin-bottom: 3rem;
+    .sb-avatar {
+        padding: 0.5rem;
 
-        }
     }
 }
 .blue {

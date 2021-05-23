@@ -34,7 +34,7 @@ const Lender = (props) => {
                 data={loan}
                 defaultItem="$25"
             />
-            <button onClick={() => props.history.push('/lend-causes')} >Support an different cause</button>
+            <button onClick={() => props.history.push('/lend-causes')} >Support a different cause</button>
             <div className='payment'>
             <Form
                 render={(formRenderProps) => (
