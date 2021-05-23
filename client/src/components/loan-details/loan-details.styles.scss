@@ -1,0 +1,54 @@
+.loan-details-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: auto;
+    width: 50vw;
+    justify-items: center;
+    color: gray;
+    text-align: left;
+    > * {
+        border: 0.5px solid black;
+        border-radius: 1rem;
+        padding: 1rem;
+        box-shadow: beige;
+        flex: 1;
+    }
+    > *:hover {
+        border: 1px solid #0047FF;
+    }
+    .blue {
+        color: #0047FF;
+        font-weight: 300;
+    }
+    .red {
+        color: var(--red);
+        font-weight: 300;
+    }
+
+    img {
+        width: 20vw;
+        margin-bottom: 1rem;
+    }
+    .loan-images{ 
+        border: none;
+    }
+    .loan-desc {
+        padding: 2rem;
+        bordeR: none;
+
+    }
+    .loaners {
+        display: flex; 
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+        .sb-avatar {
+            padding: 0.5rem;
+
+        }
+    }
+}
+.blue {
+    color: #0047FF;
+    font-weight: 300;
+}

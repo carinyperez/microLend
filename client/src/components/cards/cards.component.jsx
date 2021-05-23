@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import {withRouter} from 'react-router-dom'; 
+
 import {
   Card,
   CardHeader,
@@ -33,11 +35,11 @@ const Cards = (props) => {
           <button className="k-button k-flat">
             <span className="k-icon k-i-share" />
           </button>
-          <button>{props.button}</button>
+          <button onClick={ () => props.history.push('/loan-details')}>{props.button}</button>
         </CardActions>
       </Card>
     </div>
   );
 };
 
-export default Cards;
+export default withRouter(Cards);

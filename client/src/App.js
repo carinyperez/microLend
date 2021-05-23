@@ -13,6 +13,7 @@ import Footer from "./components/footer/footer.component";
 import Login from "./components/login/login.component";
 import Mentors from "./pages/mentors/mentors.component";
 import Lender from "./pages/lender/lender.component";
+import LoanDetails from './components/loan-details/loan-details.component';
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
             <Route exact path="/login" component={Login}></Route>
             <Route exact path="/mentors" component={Mentors}></Route>
             <Route exact path="/loan-application" component={Loan}></Route>
+            <Route exact path="/loan-details" component={LoanDetails}></Route>
           </Switch>
           <Footer />
         </div>

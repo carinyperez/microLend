@@ -6,8 +6,7 @@ import { Form, Field, FormElement } from "@progress/kendo-react-form";
 import {Label} from "@progress/kendo-react-labels"; 
 import { Input} from "@progress/kendo-react-inputs";
 
-
-const Lender = () => {
+const Lender = (props) => {
     const loan = [
         "$50",
         "$100",
@@ -35,7 +34,7 @@ const Lender = () => {
                 data={loan}
                 defaultItem="$25"
             />
-            
+            <button onClick={() => props.history.push('/lend-causes')} >Support an different cause</button>
             <div className='payment'>
             <Form
                 render={(formRenderProps) => (
@@ -69,4 +68,4 @@ const Lender = () => {
     )
 }
 
-export default Lender; 
+export default (Lender); 
