@@ -17,8 +17,10 @@ const HomePage = () => {
         <p>
           {" "}
           With microLend, you can lend as little as $25
-          <br />
+          <br/>
           and make a big change in someone's life
+          <br/>
+          <button id="btn">Find a borrower</button> <button id="btn2">Loan money</button>
         </p>
       </div>
       <div className="content">
