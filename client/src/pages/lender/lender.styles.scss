@@ -1,0 +1,45 @@
+.lender {
+    display: grid; 
+    grid-template-columns: 1fr;
+    justify-items: center;
+    .content {
+        flex: 1;
+        p {
+            font-weight: bolder;
+        }
+        img {
+            width: 20vw;
+        }
+    }
+    .dropdown {
+        flex: 1;
+        margin-bottom: 1rem;
+    }
+    .payment {
+        flex: 1;
+        margin-bottom: 3rem;
+        form {
+            width: 50vw;
+            p {
+                text-align: left;
+                font-size: 0.7em;
+                color: gray;
+            }
+            label {
+                margin-bottom: 0.5rem;
+            }
+        }
+        
+    }
+    button {
+            border-radius: 1rem;
+            border-color: var(--red);
+            border-width: thin;
+            border-style: solid;
+            outline: none;
+            padding: 0.5rem 2rem;
+            color: white;
+            background-color: var(--red);
+            margin: 0.75rem; 
+    }
+}
