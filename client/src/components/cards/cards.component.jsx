@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import {withRouter} from 'react-router-dom'; 
+
 import {
   Card,
   CardHeader,
@@ -8,7 +10,7 @@ import {
   CardActions,
   CardImage,
   CardSubtitle,
-  Avata,
+  Avatar,
 } from "@progress/kendo-react-layout";
 import { ProgressBar } from "@progress/kendo-react-progressbars";
 import "./cards.styles.scss";
@@ -23,13 +25,21 @@ const Cards = (props) => {
           <p>{props.amount}</p>
         </CardTitle>
         <CardBody>{props.desc}</CardBody>
+        <div style={{ "text-align": "left" }}>
+          <p>AMOUNT LOANED</p>
+        </div>
+        <span>{props.current} / {props.amount}</span>
         <ProgressBar value={props.percentage} />
         <CardActions>
-          <button>{props.button}</button>
+          <button className="k-button k-bare">Share</button>
+          <button className="k-button k-flat">
+            <span className="k-icon k-i-share" />
+          </button>
+          <button onClick={ () => props.history.push('/loan-details')}>{props.button}</button>
         </CardActions>
       </Card>
     </div>
   );
 };
 
-export default Cards;
+export default withRouter(Cards);

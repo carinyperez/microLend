@@ -1,13 +1,11 @@
 import React from 'react'; 
-import './sign-up.styles.scss'; 
+import './login.styles.scss'; 
 import {connect} from 'react-redux'; 
 import signup from '../../redux/reducers/auth/auth.actions'; 
-import Alert from '../alert/alert.component'; 
-import setAlert from '../../redux/reducers/alert/alert.actions';
 import {withRouter} from 'react-router-dom'; 
 import axios from 'axios'; 
 
-class SignUp extends React.Component {
+class Login extends React.Component {
     constructor() {
         super(); 
         this.state = {
@@ -19,16 +17,8 @@ class SignUp extends React.Component {
     handleSubmit = async event => {
         event.preventDefault(); 
         const {username, email, password} = this.state;
-        try {
-            const user = await this.props.signup({username, email, password});
-            if(user) {
-                setTimeout(() => this.props.history.push('/loan-application'), 3000); 
-            } else {
-                setTimeout(() => this.props.history.push('/login'), 3000); 
-            }
-        } catch (error) {
-            console.error(error);
-        }
+        this.props.signup({username, email, password});
+        setTimeout(() => this.props.history.push('/loan-application'), 3000);
     }
     handleChange = event => {
         event.preventDefault(); 
@@ -38,10 +28,10 @@ class SignUp extends React.Component {
     render() {
         const {username, email, password} = this.state; 
         return (
-      <div className='signup-container'>
-       <div className='signup'> 
-            <h1>Sign Up</h1>
-            <form className='sign-up-form' onSubmit={this.handleSubmit}>
+      <div className='login-container'>
+       <div className='login'> 
+            <h1>Login</h1>
+            <form className='login-form' onSubmit={this.handleSubmit}>
                 <label>Username
                 </label>
                 <input
@@ -69,8 +59,7 @@ class SignUp extends React.Component {
                     required
                 />
                 </label>
-                <Alert/>
-                <button>Sign Up</button>
+                <button>Login</button>
             </form>
         </div>
         </div>
@@ -82,4 +71,4 @@ const mapStateToProps = state => ({
     auth: state.auth 
 })
 
-export default withRouter(connect(mapStateToProps, {signup, setAlert})(SignUp));
+export default withRouter(connect(mapStateToProps, {signup})(Login));

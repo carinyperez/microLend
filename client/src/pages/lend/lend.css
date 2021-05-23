@@ -1,0 +1,79 @@
+.grid-treading {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
+    grid-template-areas:
+      ". . .";
+      margin-bottom: 60px;
+  }
+
+  .grid-more {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+      ". . .";
+  }
+
+.treading {
+/* position: absolute; */
+left: 9.72%;
+right: 53.47%;
+top: 19.65%;
+bottom: 79.34%;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height, or 137% */
+
+
+color: #000000;
+}
+
+.subNav {
+    margin-bottom: 20px;
+}
+
+.spanSpace {
+margin-left: 20px;
+    /* position: absolute; */
+left: 33.47%;
+right: 59.58%;
+top: 42.4%;
+bottom: 56.6%;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height, or 137% */
+
+
+color: #000000;
+}
+
+.selected {
+left: 20.97%;
+right: 72.64%;
+top: 42.4%;
+bottom: 56.6%;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height, or 137% */
+
+
+color: #0047FF;
+
+}
