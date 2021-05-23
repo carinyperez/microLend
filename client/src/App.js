@@ -5,6 +5,7 @@ import HomePage from "./pages/homepage/homepage";
 import Navigation from "./pages/navigation/navigation";
 import Borrow from "../src/pages/borrow/borrow.component";
 import Lend from "../src/pages/lend/lend.component";
+import Loan from "../src/pages/lend/loan.component";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/store";
@@ -24,6 +25,7 @@ const App = () => {
             <Route exact path="/lend" component={Lend}></Route>
             <Route exact path="/login" component={Login}></Route>
             <Route exact path="/mentors" component={Mentors}></Route>
+            <Route exact path="/loan-application" component={Loan}></Route>
           </Switch>
           <Footer />
         </div>
