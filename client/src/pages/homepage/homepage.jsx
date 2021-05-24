@@ -62,11 +62,11 @@ const HomePage = () => {
           <div className="line"></div>
           <br />
           <h2>Find a mentor</h2>
-          <p>Choose a mentor from the list of mentors</p>
+          <p id="mt">Choose a mentor from the list of mentors</p>
           <h2>Send a message</h2>
-          <p>Send a request to the mentor for guidance</p>
+          <p id="mt">Send a request to the mentor for guidance</p>
           <h2>Get trained</h2>
-          <p>
+          <p id="mt">
             Our mentors can help with things like business strategy,market
             research, business planning
           </p>
